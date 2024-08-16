@@ -1,0 +1,181 @@
+---
+layout: default
+title: Home
+---
+
+<section class="section">
+
+    <div class="calc">
+
+
+        <div class="calc__controlrow">
+
+
+
+            <div class="calc__result" id="calc__result">
+                <div class="calc__networkrow">
+
+                    <div class="calc__class">
+                        <input class="calc__inputresult--class" id="netClass" readonly>
+                        <div class="calc__caption calc__caption--class">Класс</div>
+                    </div>
+
+                    <div class="calc__network">
+
+                        <div class="calc__resultrow">
+                            <div class="calc__caption">Адрес</div>
+                            <div class="calc__wrapper">
+                                <input class="calc__inputresult" id="adress" readonly placeholder="0.0.0.0">
+                            </div>
+                        </div>
+
+                        <div class="calc__resultrow">
+                            <div class="calc__caption">Маска</div>
+                            <div class="calc__wrapper">
+                                <input class="calc__inputresult" id="mask" readonly placeholder="0.0.0.0">
+                            </div>
+                        </div>
+
+                        <div class="calc__resultrow">
+                            <div class="calc__caption">Адрес сети</div>
+                            <div class="calc__wrapper">
+                                <input class="calc__inputresult" id="netAdress" readonly placeholder="0.0.0.0">
+                            </div>
+                        </div>
+
+                        <div class="calc__resultrow">
+                            <div class="calc__caption">Адрес хоста</div>
+                            <div class="calc__wrapper">
+                                <input class="calc__inputresult" id="hostAdress" readonly placeholder="0.0.0.0">
+                            </div>
+                        </div>
+
+                        <div class="calc__resultrow">
+                            <div class="calc__caption">Количетсво хостов сети</div>
+                            <input class="calc__inputresult" id="hostCount" readonly placeholder="0.0.0.0">
+                        </div>
+
+                        <div class="calc__resultrow">
+                            <div class="calc__caption">Адрес <p>широковещательной</p> рассылки </div>
+                            <div class="calc__wrapper">
+                                <input class="calc__inputresult" id="broadcast" readonly placeholder="0.0.0.0">
+                            </div>
+                        </div>
+
+                        <div class="calc__resultrow">
+                            <div class="calc__caption">Первый адрес в сети</div>
+                            <div class="calc__wrapper">
+                                <input class="calc__inputresult" id="firstHost" readonly placeholder="0.0.0.0">
+                            </div>
+                        </div>
+
+                        <div class="calc__resultrow">
+                            <div class="calc__caption">Последний адрес в сети</div>
+                            <div class="calc__wrapper">
+                                <input class="calc__inputresult" id="lastHost" readonly placeholder="0.0.0.0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calc__subnetworks calc__subnetworks--hidden" id="calc_subnetworks">
+                    <div class="calc__resultrow">
+                        <div class="calc__caption">Маска</div>
+                        <div class="calc__wrapper">
+                            <input class="calc__inputresult" id="subMask" readonly placeholder="0.0.0.0">
+                        </div>
+                    </div>
+                    <div class="calc__networks">
+
+                        <div class="calc__network calc__network--sub">
+                            <div class="calc__caption calc__caption--sub calc__caption--green">Сеть А</div>
+                            <div class="calc__resultrow">
+                                <div class="calc__caption">Адрес сети</div>
+                                <div class="calc__wrapper">
+                                    <input class="calc__inputresult" id="netAdressA" readonly placeholder="0.0.0.0">
+                                </div>
+                            </div>
+
+                            <div class="calc__resultrow">
+                                <div class="calc__caption">Адрес <p>широковещательной</p> рассылки</div>
+                                <div class="calc__wrapper">
+                                    <input class="calc__inputresult" id="broadcastA" readonly placeholder="0.0.0.0">
+                                </div>
+                            </div>
+
+                            <div class="calc__resultrow">
+                                <div class="calc__caption">Первый адрес сети</div>
+                                <div class="calc__wrapper">
+                                    <input class="calc__inputresult" id="firstHostA" readonly placeholder="0.0.0.0">
+                                </div>
+                            </div>
+
+                            <div class="calc__resultrow">
+                                <div class="calc__caption">Последний адрес сети</div>
+                                <div class="calc__wrapper">
+                                    <input class="calc__inputresult" id="lastHostA" readonly placeholder="0.0.0.0">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="calc__network calc__network--sub">
+                            <div class="calc__caption calc__caption--sub calc__caption--red">Сеть Б</div>
+                            <div class="calc__resultrow">
+                                <div class="calc__caption">Адрес сети</div>
+                                <div class="calc__wrapper">
+                                    <input class="calc__inputresult" id="netAdressB" readonly placeholder="0.0.0.0">
+                                </div>
+                            </div>
+
+                            <div class="calc__resultrow">
+                                <div class="calc__caption">Адрес <p>широковещательной</p> рассылки</div>
+                                <div class="calc__wrapper">
+                                    <input class="calc__inputresult" id="broadcastB" readonly placeholder="0.0.0.0">
+                                </div>
+                            </div>
+
+                            <div class="calc__resultrow">
+                                <div class="calc__caption">Первый адрес сети</div>
+                                <div class="calc__wrapper">
+                                    <input class="calc__inputresult" id="firstHostB" readonly placeholder="0.0.0.0">
+                                </div>
+                            </div>
+
+                            <div class="calc__resultrow">
+                                <div class="calc__caption">Последний адрес сети</div>
+                                <div class="calc__wrapper">
+                                    <input class="calc__inputresult" id="lastHostB" readonly placeholder="0.0.0.0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="calc__control">
+                <button class="calc__resultbutton">Рассчитать</button>
+            </div>
+
+        </div>
+
+        <div class="calc__inputrow">
+
+            <span class="calc__caption">Введите IP адрес</span>
+            <div class="calc__inputs">
+                <input type="number" class="calc__input" id="1" placeholder="0">.
+                <input type="number" class="calc__input" id="2" placeholder="0">.
+                <input type="number" class="calc__input" id="3" placeholder="0">.
+                <input type="number" class="calc__input" id="4" placeholder="0">/
+                <input type="number" class="calc__input--mask" id="5" placeholder="0">
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    </div>
+</section>

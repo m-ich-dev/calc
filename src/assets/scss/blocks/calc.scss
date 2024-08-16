@@ -1,0 +1,259 @@
+.calc {
+    width: 100%;
+    height: 100vh;
+
+
+    &__controlrow {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+
+
+    }
+
+    &__class {
+
+        display: block;
+        margin-right: 1rem;
+
+        max-width: 6rem;
+        max-height: 8rem;
+        height: 100%;
+        padding-bottom: .5rem;
+
+        background-color: rgb(0, 81, 152);
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 1rem 1rem .9rem rgb(67, 103, 134)
+    }
+
+    &__inputrow {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .calc__caption {
+            margin-right: 0;
+            margin-bottom: .5rem;
+        }
+
+    }
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__control {
+        margin-left: 2rem;
+        display: flex;
+        align-items: center;
+
+
+    }
+
+    &__caption {
+        margin-right: .5rem;
+
+
+        &--class {
+            margin: 0 auto;
+
+            text-align: center;
+        }
+
+        &--sub {
+            text-align: center;
+            font-weight: 500;
+            margin-bottom: .5rem;
+            text-transform: uppercase;
+        }
+
+        &--green {
+            color: green;
+        }
+
+        &--red {
+            color: red;
+        }
+
+    }
+
+    &__inputs {
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+
+
+
+    }
+
+    &__input {
+
+        margin: 0 1.5rem;
+        background-color: transparent;
+        border: none;
+
+
+
+
+        text-align: center;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+
+        &--mask {
+            margin-left: 1.5rem;
+            background-color: transparent;
+            text-align: center;
+
+        }
+    }
+
+
+    &__result {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+
+
+    &__network {
+        display: flex;
+        flex-direction: column;
+        background-color: #f5f5f5;
+        padding: 2rem;
+        border-radius: .5rem;
+
+        box-shadow: 1rem 1rem .9rem #c2c2c2;
+
+        &--sub {
+            box-shadow: none;
+            padding: 0;
+        }
+
+
+
+    }
+
+    &__resultrow {
+        display: flex;
+        margin-bottom: 1rem;
+     
+
+    }
+
+    &__networkrow {
+        display: flex;
+    }
+
+    &__inputresult {
+        background-color: transparent;
+        color: rgb(0, 81, 152);
+        font-weight: 500;
+
+        &--binary {
+
+            color: #02b3e9;
+            font-size: 1.5rem;
+        }
+
+        &--class {
+            background-color: transparent;
+            color: rgb(0, 81, 152);
+            font-weight: 500;
+
+            width: 100%;
+            color: #fff;
+            text-align: center;
+            font-size: 4rem;
+            font-weight: bold;
+            background-color: transparent;
+        }
+
+
+    }
+
+
+    &__subnetworks {
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 2rem;
+        padding: 2rem;
+
+        border-radius: .5rem;
+        background-color: #f5f5f5;
+        box-shadow: 1rem 1rem .9rem #c2c2c2;
+        transition: all 3s linear;
+        
+        &--hidden{
+            
+           display: none;
+        }
+    }
+
+    &__networks {
+        display: flex;
+
+    }
+
+
+    &__network {
+        display: flex;
+        flex-direction: column;
+        margin-left: 3rem;
+
+        &:first-child {
+            margin-left: 0
+        }
+
+        ;
+    }
+
+    &__resultbutton {
+        padding: 1rem;
+        border-radius: .5rem;
+        transition: color .1s linear, background-color .3s linear;
+
+        &:hover {
+            color: #fff;
+            background-color: rgb(0, 81, 152);
+
+
+        }
+    }
+
+
+
+
+
+
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+
+    input[type='number'],
+    input[type="number"]:hover,
+    input[type="number"]:focus {
+        appearance: none;
+        -moz-appearance: textfield;
+    }
+
+
+
+
+
+
+}

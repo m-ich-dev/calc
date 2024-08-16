@@ -1,0 +1,17 @@
+@import "vendor/reset";
+@import "vendor/ibg.scss";
+    
+    
+
+body {
+    
+    font-size: 2rem;
+    color: #000;
+    
+}
+
+
+@import "blocks/container.scss";
+@import "blocks/calc.scss";
+@import "blocks/section.scss";
+
